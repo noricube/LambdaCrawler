@@ -92,14 +92,8 @@ class Crawler:
 
         if articles.__len__() > 0:
             self.save_articles( board_id, articles )
-        #print self.fetch_article(board_id,1)
-        #self.save_latest_count(board_id, count+1)
 
 def my_handler(event, context):
-        #output = StringIO.StringIO()
-        #spamwriter = csv.writer(output, delimiter=',',quotechar='\'', quoting=csv.QUOTE_MINIMAL)
-        #spamwriter.writerow(['aaaa'] * 5 + ['b'])
-        #print output.getvalue()
         cralwer = Crawler()
         cralwer.do()
 
