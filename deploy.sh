@@ -15,4 +15,4 @@ aws lambda create-function \
     --handler handler.my_handler \
     --runtime python2.7 \
     --timeout 300 \
-    --memory-size 256
+    --memory-size 128
